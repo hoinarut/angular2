@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Sat Apr 16 2016 16:47:26 GMT-0600 (Mountain Daylight Time)
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -20,8 +20,9 @@ module.exports = function(config) {
       'public/vendor/1.5.5/angular-route.min.js',
       'public/vendor/toastr.min.js',
       'public/toastr/toastr.js',
-      'public/app.js',
+      'build/app.js',
       'public/**/*.js',
+      'build/**/*.js',
       'test/**/*.js',
       'public/**/*.html'
     ],
@@ -38,7 +39,7 @@ module.exports = function(config) {
     preprocessors: {
       '**/*.html': ['ng-html2js']
     },
-    
+
     ngHtml2JsPreprocessor: {
       stripPrefix: 'public'
     },
